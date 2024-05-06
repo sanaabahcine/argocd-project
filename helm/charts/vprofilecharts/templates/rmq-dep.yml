@@ -20,6 +20,8 @@ spec:
         ports:
         - name: vpromq01-port
           containerPort: 15672
+        - name: amqp
+          containerPort: 5672  # Ajoutez cette ligne pour spécifier le port 5672
         env: 
          - name: RABBITMQ_DEFAULT_PASS
            valueFrom:
@@ -28,4 +30,3 @@ spec:
                key: rmq-pass
          - name: RABBITMQ_DEFAULT_USER
            value: "test"
-
