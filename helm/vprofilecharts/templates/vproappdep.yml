@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: vproapp
-        image: learnwithabhi/vproappdock:latest
+        image: sanaeabahcine371/vproappdock:latest
         ports:
         - name: vproapp-port
           containerPort: 8080
